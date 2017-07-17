@@ -1,0 +1,240 @@
+/*
+    With The Name Of God!
+
+    smios V 0.0.1
+
+    Grid System By Ali Almohaya using FlexBox // DiskTop First
+    29/6/2017
+*/
+/*
+    MainWidth {
+        lg: 1200
+        md: 992 
+        ms: 768
+        xm: 530
+        }
+*/
+/*
+    ### Genral Styles
+*/
+* {
+  box-sizing: border-box; }
+
+.col {
+  float: left;
+  overflow: hidden; }
+
+.row {
+  overflow: hidden; }
+
+/*
+    ### Containers
+*/
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+@media (max-width: 1200px) {
+  .container {
+    width: 992px;
+    margin: 0 auto; } }
+@media (max-width: 992px) {
+  .container {
+    width: 768px;
+    margin: 0 auto; } }
+@media (max-width: 768px) {
+  .container {
+    width: 530px;
+    margin: 0 auto; } }
+@media (max-width: 530px) {
+  .container {
+    width: 90%;
+    margin: 0 auto; } }
+/*
+    ### colmuns
+*/
+.col-1-lg {
+  width: 100px; }
+
+.col-2-lg {
+  width: 200px; }
+
+.col-3-lg {
+  width: 300px; }
+
+.col-4-lg {
+  width: 400px; }
+
+.col-5-lg {
+  width: 500px; }
+
+.col-6-lg {
+  width: 600px; }
+
+.col-7-lg {
+  width: 700px; }
+
+.col-8-lg {
+  width: 800px; }
+
+.col-9-lg {
+  width: 900px; }
+
+.col-10-lg {
+  width: 1000px; }
+
+.col-11-lg {
+  width: 1100px; }
+
+.col-12-lg {
+  width: 1200px; }
+
+@media (max-width: 1200px) {
+  .col-1-md {
+    width: 82.66667px; }
+
+  .col-2-md {
+    width: 165.33333px; }
+
+  .col-3-md {
+    width: 248px; }
+
+  .col-4-md {
+    width: 330.66667px; }
+
+  .col-5-md {
+    width: 413.33333px; }
+
+  .col-6-md {
+    width: 496px; }
+
+  .col-7-md {
+    width: 578.66667px; }
+
+  .col-8-md {
+    width: 661.33333px; }
+
+  .col-9-md {
+    width: 744px; }
+
+  .col-10-md {
+    width: 826.66667px; }
+
+  .col-11-md {
+    width: 909.33333px; }
+
+  .col-12-md {
+    width: 992px; } }
+@media (max-width: 992px) {
+  .col-1-sm {
+    width: 64px; }
+
+  .col-2-sm {
+    width: 128px; }
+
+  .col-3-sm {
+    width: 192px; }
+
+  .col-4-sm {
+    width: 256px; }
+
+  .col-5-sm {
+    width: 320px; }
+
+  .col-6-sm {
+    width: 384px; }
+
+  .col-7-sm {
+    width: 448px; }
+
+  .col-8-sm {
+    width: 512px; }
+
+  .col-9-sm {
+    width: 576px; }
+
+  .col-10-sm {
+    width: 640px; }
+
+  .col-11-sm {
+    width: 704px; }
+
+  .col-12-sm {
+    width: 768px; } }
+@media (max-width: 768px) {
+  .col-1-xs {
+    width: 44.16667px; }
+
+  .col-2-xs {
+    width: 88.33333px; }
+
+  .col-3-xs {
+    width: 132.5px; }
+
+  .col-4-xs {
+    width: 176.66667px; }
+
+  .col-5-xs {
+    width: 220.83333px; }
+
+  .col-6-xs {
+    width: 265px; }
+
+  .col-7-xs {
+    width: 309.16667px; }
+
+  .col-8-xs {
+    width: 353.33333px; }
+
+  .col-9-xs {
+    width: 397.5px; }
+
+  .col-10-xs {
+    width: 441.66667px; }
+
+  .col-11-xs {
+    width: 485.83333px; }
+
+  .col-12-xs {
+    width: 530px; } }
+@media (max-width: 530px) {
+  .col-1-xxs {
+    width: 8.33333%; }
+
+  .col-2-xxs {
+    width: 16.66667%; }
+
+  .col-3-xxs {
+    width: 25%; }
+
+  .col-4-xxs {
+    width: 33.33333%; }
+
+  .col-5-xxs {
+    width: 41.66667%; }
+
+  .col-6-xxs {
+    width: 50%; }
+
+  .col-7-xxs {
+    width: 58.33333%; }
+
+  .col-8-xxs {
+    width: 66.66667%; }
+
+  .col-9-xxs {
+    width: 75%; }
+
+  .col-10-xxs {
+    width: 83.33333%; }
+
+  .col-11-xxs {
+    width: 91.66667%; }
+
+  .col-12-xxs {
+    width: 100%; } }
+/*
+    ###################################################
+*/
+
+/*# sourceMappingURL=smios.css.map */

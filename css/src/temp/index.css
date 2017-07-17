@@ -1,0 +1,355 @@
+/*
+    With The Name Of God!
+
+    my web site V 0.0.1
+
+    simple website for me By Ali Almohaya using FlexBox // DiskTop First
+    29/6/2017
+*/
+/*
+  Genral styles and classes
+*/
+body {
+  font-family: 'dreamer', Arial, Helvetica, sans-serif;
+  background-color: #7f8d9a; }
+
+.main-color-bg {
+  background-color: #7f8d9a; }
+
+.main-color-text {
+  color: #7f8d9a; }
+
+.text-white {
+  color: white; }
+
+.big-font {
+  font-size: 75px; }
+
+.pre-big-font {
+  font-size: 50px; }
+
+.sm-big-font {
+  font-size: 28px; }
+
+.md-big-font {
+  font-size: 40px; }
+
+@media (max-width: 1200px) {
+  .big-font {
+    font-size: 65px; }
+
+  .md-big-font {
+    font-size: 35px; } }
+@media (max-width: 992px) {
+  .big-font {
+    font-size: 55px; }
+
+  .md-big-font {
+    font-size: 30px; } }
+@media (max-width: 768px) {
+  .big-font {
+    font-size: 45px; }
+
+  .md-big-font {
+    font-size: 25px; } }
+@media (max-width: 530px) {
+  .big-font {
+    font-size: 38px; }
+
+  .md-big-font {
+    font-size: 25px !important; } }
+@media (max-width: 530px) {
+  .sm-big-font {
+    font-size: 23px !important; } }
+.center-text {
+  text-align: center; }
+
+a {
+  text-decoration: none; }
+
+.line {
+  display: block;
+  height: 10px;
+  width: 400px;
+  text-align: center;
+  background-color: #FFF;
+  margin: 5px auto; }
+
+@media (max-width: 530px) {
+  .line {
+    width: 80%; } }
+.btn {
+  border: 1px solid #FFF;
+  font-size: 27px;
+  background-color: #7f8d9a;
+  padding: 4px 8px; }
+
+.pointer {
+  cursor: pointer; }
+
+.center-block {
+  display: block;
+  margin: auto; }
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5b6771;
+  z-index: 999; }
+  .loader img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: rotate 2s infinite linear; }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+/* start header
+  ####################################
+*/
+header.header {
+  background: url("../images/bg.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover; }
+  header.header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  header.header .center {
+    align-self: center; }
+  header.header .flexed {
+    display: flex;
+    flex-direction: column; }
+    header.header .flexed h2 {
+      margin: 15px 0; }
+      header.header .flexed h2:last-of-type {
+        align-self: flex-end; }
+    header.header .flexed h3 {
+      align-self: center;
+      margin: 10px 0; }
+  header.header nav {
+    display: flex;
+    flex-direction: column;
+    position: relative; }
+    header.header nav .img {
+      align-self: center;
+      background-image: url("../images/naver.svg");
+      background-size: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 70px;
+      width: 70px;
+      z-index: 99;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: .8s all; }
+      header.header nav .img .bar {
+        background-color: #5b6771;
+        height: 5px;
+        width: 30px;
+        margin: 5px 0;
+        align-self: center;
+        transition: .8s all; }
+        header.header nav .img .bar:first-of-type, header.header nav .img .bar:last-of-type {
+          margin: 0; }
+    header.header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 5px 2px;
+      text-align: center;
+      position: absolute;
+      align-self: center;
+      background-color: #5b6771;
+      flex-basis: auto;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      display: flex;
+      justify-content: space-between; }
+      header.header nav ul li {
+        margin: 0 6px;
+        color: #fff;
+        display: none;
+        cursor: pointer;
+        padding: 10px 0; }
+        header.header nav ul li:first-of-type, header.header nav ul li:nth-of-type(2) {
+          align-self: flex-start; }
+        header.header nav ul li:last-of-type, header.header nav ul li:nth-of-type(3) {
+          align-self: flex-end; }
+    header.header nav .img.active {
+      transform: rotate(90deg); }
+      header.header nav .img.active .bar {
+        transform: rotate(45deg); }
+    header.header nav .img.down {
+      position: relative;
+      top: 0; }
+      header.header nav .img.down .bar:first-of-type {
+        transform: translate(10px, 5px) rotate(45deg); }
+      header.header nav .img.down .bar:nth-of-type(2) {
+        transform: rotate(90deg); }
+      header.header nav .img.down .bar:last-of-type {
+        transform: translate(-10px, -15px) rotate(-45deg); }
+
+/* start aboutme
+  ####################################
+*/
+article.about-me,
+article.my-skills,
+article.my-works,
+article.contact-me {
+  padding-top: 30px; }
+  article.about-me h4,
+  article.my-skills h4,
+  article.my-works h4,
+  article.contact-me h4 {
+    margin-bottom: 35px;
+    white-space: 4px; }
+  article.about-me .card,
+  article.my-skills .card,
+  article.my-works .card,
+  article.contact-me .card {
+    background-color: #fff;
+    margin-top: 35px;
+    overflow: hidden;
+    margin-bottom: 30px; }
+    article.about-me .card:last-of-type,
+    article.my-skills .card:last-of-type,
+    article.my-works .card:last-of-type,
+    article.contact-me .card:last-of-type {
+      margin-bottom: 0; }
+    article.about-me .card p.text,
+    article.my-skills .card p.text,
+    article.my-works .card p.text,
+    article.contact-me .card p.text {
+      padding: 0px 15px;
+      line-height: 1.8; }
+    article.about-me .card div.imgWrapper,
+    article.my-skills .card div.imgWrapper,
+    article.my-works .card div.imgWrapper,
+    article.contact-me .card div.imgWrapper {
+      height: 100%; }
+      article.about-me .card div.imgWrapper img,
+      article.my-skills .card div.imgWrapper img,
+      article.my-works .card div.imgWrapper img,
+      article.contact-me .card div.imgWrapper img {
+        display: block; }
+    article.about-me .card .padTop,
+    article.my-skills .card .padTop,
+    article.my-works .card .padTop,
+    article.contact-me .card .padTop {
+      padding-top: 15px; }
+    article.about-me .card p.title,
+    article.my-skills .card p.title,
+    article.my-works .card p.title,
+    article.contact-me .card p.title {
+      margin: 15px; }
+    article.about-me .card div.pro-wrapper,
+    article.my-skills .card div.pro-wrapper,
+    article.my-works .card div.pro-wrapper,
+    article.contact-me .card div.pro-wrapper {
+      padding: 5px; }
+      article.about-me .card div.pro-wrapper div,
+      article.my-skills .card div.pro-wrapper div,
+      article.my-works .card div.pro-wrapper div,
+      article.contact-me .card div.pro-wrapper div {
+        background-color: #7f8d9a;
+        height: 200px;
+        padding: 5px;
+        border-radius: 2px; }
+    article.about-me .card .btn,
+    article.my-skills .card .btn,
+    article.my-works .card .btn,
+    article.contact-me .card .btn {
+      margin: 10px auto; }
+    article.about-me .card .media h4,
+    article.my-skills .card .media h4,
+    article.my-works .card .media h4,
+    article.contact-me .card .media h4 {
+      margin: 10px; }
+    article.about-me .card .media .social,
+    article.my-skills .card .media .social,
+    article.my-works .card .media .social,
+    article.contact-me .card .media .social {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row; }
+      article.about-me .card .media .social span,
+      article.my-skills .card .media .social span,
+      article.my-works .card .media .social span,
+      article.contact-me .card .media .social span {
+        color: #fff;
+        margin: 10px;
+        width: 45%;
+        overflow: hidden; }
+        article.about-me .card .media .social span span,
+        article.my-skills .card .media .social span span,
+        article.my-works .card .media .social span span,
+        article.contact-me .card .media .social span span {
+          padding: 10px;
+          background-color: #7f8d9a;
+          display: block;
+          width: 100%;
+          overflow: hidden; }
+        article.about-me .card .media .social span i,
+        article.my-skills .card .media .social span i,
+        article.my-works .card .media .social span i,
+        article.contact-me .card .media .social span i {
+          font-size: 30px;
+          color: #fff; }
+    article.about-me .card .form,
+    article.my-skills .card .form,
+    article.my-works .card .form,
+    article.contact-me .card .form {
+      padding: 10px; }
+      article.about-me .card .form form label,
+      article.my-skills .card .form form label,
+      article.my-works .card .form form label,
+      article.contact-me .card .form form label {
+        display: block;
+        font-size: 25px; }
+      article.about-me .card .form form input:not([type='submit']),
+      article.about-me .card .form form textarea,
+      article.my-skills .card .form form input:not([type='submit']),
+      article.my-skills .card .form form textarea,
+      article.my-works .card .form form input:not([type='submit']),
+      article.my-works .card .form form textarea,
+      article.contact-me .card .form form input:not([type='submit']),
+      article.contact-me .card .form form textarea {
+        padding: 7px 9px;
+        display: block;
+        background-color: #7f8d9a;
+        width: 99%;
+        font-size: 25px;
+        color: #fff;
+        margin: auto; }
+
+footer {
+  background: #5b6771;
+  overflow: hidden; }
+
+@media (max-width: 530px) {
+  .full-xxs {
+    width: 90% !important; } }
+@media (max-width: 530px) {
+  ul {
+    width: 0px; }
+
+  ul li {
+    font-size: 14px; } }
+
+/*# sourceMappingURL=index.css.map */

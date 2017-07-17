@@ -1,0 +1,151 @@
+/*
+    With The Name Of God!
+
+    smios V 0.0.1
+
+    Grid System By Ali Almohaya using FlexBox // DiskTop First
+    29/6/2017
+*/
+
+/*
+    MainWidth {
+        lg: 1200
+        md: 992 
+        ms: 768
+        xm: 530
+        }
+*/
+
+/*
+    ### Genral Styles
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.col {
+    float: left; 
+    overflow: hidden;
+}
+
+.row {
+    overflow: hidden;
+}
+
+// @media (max-width:530px) {
+//     .full-xxs {
+//         width: 80%;
+//     }
+// }
+
+/*
+    ### Containers
+*/
+
+//lg
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+// md
+@media (max-width:1200px) {
+    .container {
+        width: 992px;
+        margin: 0 auto;
+    }
+}
+//sm
+@media (max-width:992px) {
+    .container {
+        width: 768px;
+        margin: 0 auto;
+    }
+}
+//xs
+@media (max-width:768px) {
+    .container {
+        width: 530px;
+        margin: 0 auto;
+    }
+}
+//xs
+@media (max-width:530px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+/*
+    ### colmuns
+*/
+
+//lg
+
+@for $i from 1 through 12 {
+    .col-#{$i}-lg {
+        width: 100px * $i;
+    }
+}
+
+
+@media (max-width:1200px) {
+    @for $i from 1 through 12 {
+        .col-#{$i}-md {
+            width: 82.66666666666667px * $i;
+        }
+    }
+}
+
+@media (max-width:992px) {
+    @for $i from 1 through 12 {
+        .col-#{$i}-sm {
+            width: 64px * $i;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    @for $i from 1 through 12 {
+        .col-#{$i}-xs {
+            width: 44.16666666666667px * $i;
+        }
+    }
+}
+
+@media (max-width:530px) {
+    @for $i from 1 through 12 {
+        .col-#{$i}-xxs {
+            width: 8.333333333333333% * $i;
+        }
+    }
+}
+
+// // md
+// @media (max-width:1200px) {
+//     .col-4 {
+//         width: 992px;
+//         margin: 0 auto;
+//     }
+// }
+// //sm
+// @media (max-width:992px) {
+//     .col-4 {
+//         width: 768px;
+//         margin: 0 auto;
+//     }
+// }
+// //xs
+// @media (max-width:768px) {
+//     .col-4 {
+//         width: 95%;
+//         margin: 0 auto;
+//     }
+// }
+
+
+/*
+    ###################################################
+*/

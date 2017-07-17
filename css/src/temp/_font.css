@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'dreamer';
+	src: url('../fonts/dreamer.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_7349">Text with this font applied</p> */
+.fontsforweb_fontid_7349 {
+	font-family: 'impactreg' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
